@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/regstyle.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          
+          <li><a href="user.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form class="login-form" action="#">
+
+        <h3>Log in Page</h3>
+        
+        <p id="alertError" class="alert-error hide">Authentication Failed</p>
+
+        <div class="input-container">
+        <label for="email">Username:</label>
+        <input type="text" id="txtEmail" />
+        </div>
+
+        <div class="input-container">
+        <label for="password">Password:</label>
+        <input type="password" id="txtPassword" />
+        </div>
+        <button id="btnSubmit" onclick="login()">Log In</button>
+      </form>
+
+
+    </main>
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/register.js"></script>
+  </body>
+</html>
